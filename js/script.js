@@ -35,3 +35,12 @@ function validate(e) {
     }
   }
 }
+function renderMessage(message, className) {
+  let p = document.querySelector("p");
+  p.style.display = "block";
+  p.innerText = `${message}`;
+  p.className = className;
+  setTimeout(() => {
+    p.style.display = "none";
+  }, 2500);
+}
