@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation App</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .container {
+        width: 50vw;
+        height: 35vh;
+        background-size: 100% 100%;
+        background-position: 0px 0px;
+        background-image: linear-gradient(90deg, #a100ffff 0%, #71c4ffff 100%);
+        padding: 1.5rem 2.5rem 3rem;
+        margin: 2rem auto;
+        border-radius: 0.25rem;
+        color: whitesmoke;
+      }
+      ul {
+        list-style: decimal;
+        color: #333;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: #333;
+      }
+      p {
+        display: none;
+        width: 20vw;
+        text-align: center;
+        padding: 0.5rem 0.3rem;
+        border-radius: 0.3rem;
+        margin: 1.2rem auto;
+      }
+      .success {
+        color: #fff;
+        background: rgb(40, 183, 40);
+      }
+      .error {
+        color: #fff;
+        background: rgb(237, 57, 57);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>What do you want to validate?</h3>
+      <h5>Select the option below:</h5>
+      <ul>
+        <li><a class="email" href="#">Email</a></li>
+        <li><a class="phone" href="#">Phone</a></li>
+        <li><a class="post" href="#">Post code</a></li>
+      </ul>
+    </div>
+    <br />
+    <p></p>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
